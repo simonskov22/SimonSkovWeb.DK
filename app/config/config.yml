@@ -3,12 +3,6 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
 
-assets:
-    packeges:
-        css: web/css/
-        img: web/images/
-
-
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -34,9 +28,15 @@ framework:
         save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
     fragments: ~
     http_method_override: true
-    assets: ~
+    assets:
+        packages:
+            css:
+                base_path: '/css/'
+
     php_errors:
         log: true
+
+
 
 # Twig Configuration
 twig:

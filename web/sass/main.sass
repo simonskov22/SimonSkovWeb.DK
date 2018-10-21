@@ -1,4 +1,4 @@
-$assetPath : "/images"
+$rootDir : "/SimonSkovWeb_Brick/web/"
 
 $colorBlue : #1e6dff
 $colorBlack : #000
@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6,p
   margin: 0
 
 header
-  background: url("/web/images/Brick-64.png") repeat
+  background: url($rootDir+"images/Brick-64.png") repeat
   background-size: 128px
   height: 196px
   image-rendering: pixelated
@@ -52,9 +52,8 @@ nav
     text-shadow: 1px 1px black
 
 
-
 .navigationDetail
-  background: url("/web/images/Brick_Blank-64.png") repeat
+  background: url($rootDir+"images/Brick_Blank-64.png") repeat
   image-rendering: pixelated
   background-size: 256px
   height: 128px
@@ -84,4 +83,3 @@ footer
     color: $colorWhite
     cursor: default
     text-align: center
-    
