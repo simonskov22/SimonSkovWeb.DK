@@ -23,11 +23,13 @@
       </nav>
       <div class="navigationDetail"></div>
       <main>
+        {% block body %}
+          <h3>Siden er under opbygning :)</h3>
+        {% endblock %}
 
-        <h3>Siden er under opbygning :)</h3>
       </main>
 
-        {% block body %}{% endblock %}
+
         {% block javascripts %}{% endblock %}
     </body>
     <footer>
